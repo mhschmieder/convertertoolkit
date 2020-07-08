@@ -1,5 +1,5 @@
-# GraphicsConverter
-GraphicsConverter is a toolkit for converting AWT based graphics and GUI elements to various vector graphics output formats such as EPS, SVG and PDF.
+# ConverterToolkit
+ConverterToolkit is a toolkit for converting AWT based graphics and GUI elements to various vector graphics output formats such as EPS, SVG and PDF.
 
 This library may have to be split into separate ones for each output format, depending on whether I discover licensing discrepancies between them.
 
