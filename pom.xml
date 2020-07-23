@@ -40,7 +40,7 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>com</groupId>
+      <groupId>com.orsonpdf</groupId>
       <artifactId>orsonpdf</artifactId>
       <version>[1.9,)</version>
       <scope>compile</scope>
