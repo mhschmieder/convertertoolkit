@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.mhschmieder</groupId>
+  <artifactId>convertertoolkit</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
+  <name>ConverterToolkit</name>
+  <url>https://github.com/mhschmieder/convertertoolkit</url>
+  <description>A toolkit for converting Java AWT based graphics to various vector graphics output formats such as EPS, SVG and PDF.</description>  
+  <licenses>
+    <license>
+      <name>MIT License</name>
+      <url>https://opensource.org/licenses/MIT</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+  <dependencies>
+    <dependency>
+      <groupId>com.mhschmieder</groupId>
+      <artifactId>graphicstoolkit</artifactId>
+      <version>[0.9,)</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.mhschmieder</groupId>
+      <artifactId>guitoolkit</artifactId>
+      <version>[0.9,)</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.mhschmieder</groupId>
+      <artifactId>epstoolkit</artifactId>
+      <version>[0.9,)</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com</groupId>
+      <artifactId>orsonpdf</artifactId>
+      <version>[1.9,)</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.jfree</groupId>
+      <artifactId>svg</artifactId>
+      <version>[4.1,)</version>
+      <scope>compile</scope>
+    </dependency>
+  </dependencies>
+  <build>
+    <sourceDirectory>src/main/java</sourceDirectory>
+  </build>
+</project>
