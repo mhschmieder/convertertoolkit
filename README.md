@@ -9,8 +9,6 @@ Eclipse and NetBeans related support files are included as they are generic and 
 
 The Javadocs are 100% compliant and complete, but I am still learning how to publish those at the hosting site that I think is part of Maven Central, as it is a bad idea to bloat a GitHub project with such files and to complicate repository changes (just as with binary files and archices). Hopefully later tonight!
 
-This projects depends on my GraphicsToolkit, GuiToolkit, and EpsToolkit libraries, as well as depending on Object Refinery's JFreeSVG and Orson PDF libraries, and is marked as such in the Maven POM file.
+This projects depends on my GraphicsToolkit, GuiToolkit, and EpsToolkit libraries, as well as depending on Object Refinery's JFreeSVG and JFreePDF libraries, and is marked as such in the Maven POM file.
 
-Please note that for now my forks must be used for both external dependencies, as I had to modify the POM in order to specify Java 1.8 vs. Java 11 (JFreeSVG) andr Java 1.6 (OrsonPDF), and switch to a compatible Maven plug-in version in a couple of items in the POM, as well as correct some inconsistencies in the Group ID and Artifact ID.
-
-Those changes aren't likely to get merged, as Java 11 is Object Refinery's current target and they have rebranded OrsonPDF as the more consistent name of JFreePDF going forward, thus I do not think they have an interest in posting OrsonPDF as a Java 1.8 compatible library. I may check with them directly though. Some vendors offer multiple forks for different Java compliance levels; COntrolsFX comes to mind as they have to maintain Java 1.8 until they are 100% migrated to Java 13+.
+Please note that for now my forks must be used for both external dependencies, as I had to modify the POM in order to specify Java 1.8 vs. Java 11.
