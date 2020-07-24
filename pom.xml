@@ -61,13 +61,13 @@
     </dependency>
     <dependency>
       <groupId>org.jfree</groupId>
-      <artifactId>org.jfree.pdf</artifactId>
+      <artifactId>jfreepdf</artifactId>
       <version>[2.0,)</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.jfree</groupId>
-      <artifactId>org.jfree.svg</artifactId>
+      <artifactId>jfreesvg</artifactId>
       <version>[4.1,)</version>
       <scope>compile</scope>
     </dependency>
