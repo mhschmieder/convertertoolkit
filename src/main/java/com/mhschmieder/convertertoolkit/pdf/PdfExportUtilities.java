@@ -37,14 +37,15 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.OutputStream;
 
+import org.jfree.pdf.PDFDocument;
+import org.jfree.pdf.PDFGraphics2D;
+import org.jfree.pdf.PDFHints;
+import org.jfree.pdf.Page;
+
 import com.mhschmieder.graphicstoolkit.color.ColorMode;
 import com.mhschmieder.graphicstoolkit.graphics.GraphicsUtilities;
 import com.mhschmieder.graphicstoolkit.print.PaperConstants;
 import com.mhschmieder.guitoolkit.component.VectorSource;
-import com.orsonpdf.PDFDocument;
-import com.orsonpdf.PDFGraphics2D;
-import com.orsonpdf.PDFHints;
-import com.orsonpdf.Page;
 
 /**
  * {@code PdfExportUtilities} is a utility class for methods that export a
@@ -111,7 +112,7 @@ public class PdfExportUtilities {
      * writes it to the provided {@link File}, using UTF-16 encoding due to the
      * need to handle locale sensitive characters for the PDF Title and content.
      * <p>
-     * Note that the Color Mode isn't used yet, until OrsonPDF supports it.
+     * Note that the Color Mode isn't used yet, until JFreePDF supports it.
      *
      * @param file
      *            The {@link File} destination for writing the PDF content
@@ -150,7 +151,7 @@ public class PdfExportUtilities {
         // UTF-16 encoding (which also matches PDF's default), for better
         // performance and to guarantee platform-independence of newlines and
         // overall system-neutrality and locale-sensitivity of text data. As
-        // OrsonPDF returns the entire file contents as a byte array, we must
+        // JFreePDF returns the entire file contents as a byte array, we must
         // use {@link BufferedOutputStream} instead of {@link FileWriter}.
         try ( final FileOutputStream fileOutputStream = new FileOutputStream( file );
                 final BufferedOutputStream bufferedOutputStream =
@@ -174,9 +175,9 @@ public class PdfExportUtilities {
 
     /**
      * Creates the PDF Document corresponding to the {@link VectorSource}, and
-     * writes it to the provided {@link OutputStream} using OrsonPDF.
+     * writes it to the provided {@link OutputStream} using JFreePDF.
      * <p>
-     * Note that the Color Mode isn't used yet, until OrsonPDF supports it.
+     * Note that the Color Mode isn't used yet, until JFreePDF supports it.
      *
      * @param outputStream
      *            The wrapped {@link OutputStream} for channeling the PDF
