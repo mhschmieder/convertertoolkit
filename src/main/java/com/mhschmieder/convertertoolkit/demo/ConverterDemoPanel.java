@@ -183,7 +183,7 @@ public final class ConverterDemoPanel extends TitledVectorizationXPanel {
         add( bottomPanel );
     }
 
-    ///////////////// VectorizationXPanel method overrides ///////////////////
+    ////////////// TitledVectorizationXPanel method overrides ////////////////
 
     /**
      * Export this panel to vector graphics, using the provided export options.
@@ -216,8 +216,8 @@ public final class ConverterDemoPanel extends TitledVectorizationXPanel {
         // is often difficult to see lines plotted against a black background).
         setForegroundFromBackground( Color.WHITE );
 
-        // Draw the title first.
-        drawTitle( graphicsContext );
+        // First take care of any title or header graphics common to all panels.
+        super.vectorize( graphicsContext );
 
         // Save the top panel to the file, knowing that the title's height has
         // already been accounted for in repositioning the content.
