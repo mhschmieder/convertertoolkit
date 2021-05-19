@@ -107,22 +107,6 @@ public final class ConverterDemoFrame extends XFrame {
      * @since 1.0
      */
     public static void main( final String[] args ) {
-        // Set the Nimbus look and feel, as the most reliable across platforms.
-        // If Nimbus is not available, stick with the default look and feel.
-        //
-        // http://download.oracle.com/genericse/tutorial/uiswing/lookandfeel/plaf.html
-        try {
-            for ( final LookAndFeelInfo info : UIManager.getInstalledLookAndFeels() ) {
-                if ( "Nimbus".equals( info.getName() ) ) { //$NON-NLS-1$
-                    UIManager.setLookAndFeel( info.getClassName() );
-                    break;
-                }
-            }
-        }
-        catch ( final Exception e ) {
-            Logger.getLogger( ConverterDemoFrame.class.getName() ).log( Level.SEVERE, null, e );
-        }
-
         // Create and display this frame as the main application window.
         EventQueue.invokeLater( () -> {
             final JFrame mainFrame =
