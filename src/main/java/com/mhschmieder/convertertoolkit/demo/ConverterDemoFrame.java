@@ -36,15 +36,11 @@ import java.awt.Container;
 import java.awt.EventQueue;
 import java.awt.HeadlessException;
 import java.io.File;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 import javax.swing.JButton;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-import javax.swing.UIManager;
-import javax.swing.UIManager.LookAndFeelInfo;
 
 import com.mhschmieder.convertertoolkit.eps.EpsExportUtilities;
 import com.mhschmieder.convertertoolkit.pdf.PdfExportUtilities;
