@@ -1,6 +1,8 @@
 # ConverterToolkit
 ConverterToolkit is a toolkit for converting AWT based graphics and GUI elements to various vector graphics output formats such as EPS, SVG and PDF.
 
+ALERT: Please note that there seem to have been some recent changes to the artifact labeling of several of the legacy Java 8 versions of JFreeOrg's libraries, but I won't have time to update my POM's and/or API calls in this library for at least a few days (as of early October 20201, when I discovered the new discrepancy).
+
 In order to avoid bloat of too many small wrapper libraries, I decided to combine all the formats into one wrapper library for now, but another possibility is to break out the demo app as a separate library and have the converter wrapper part specify the three support libraries for EPS, SVG and PDF as optional dependencies, so that downstream clients can only include the formats they decide to support. The demo is just an example of combining all three into consistent app handling. This may have to be revisited anyway when I do the modularized version for Java 9 and beyond.
 
 There is a separate library for JavaFX applications to output to these same vector graphics formats, as JavaFX itself has been decoupled from the main Java distribution with current versions of Java (Java 14+) and not everyone needs that support. Also, it uses another third-party JAR with its own licensing model.
