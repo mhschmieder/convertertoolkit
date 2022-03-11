@@ -1,7 +1,7 @@
 /**
  * MIT License
  *
- * Copyright (c) 2020 Mark Schmieder
+ * Copyright (c) 2020, 2022 Mark Schmieder
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -227,7 +227,7 @@ public class PdfExportUtilities {
 
         // Create a new PDF Page, and add it to the PDF Document.
         final Page page = document
-                .createPage( new Rectangle2D.Double( 0d, 0d, pageWidth, pageHeight ) );
+                .createPage( new Rectangle2D.Double( 0.0d, 0.0d, pageWidth, pageHeight ) );
 
         // Get the Graphics Context wrapper for drawing the PDF content.
         final PDFGraphics2D pdfGraphics = page.getGraphics2D();
