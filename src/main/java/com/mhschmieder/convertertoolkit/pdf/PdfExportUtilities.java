@@ -41,8 +41,8 @@ import org.jfree.pdf.PDFGraphics2D;
 import org.jfree.pdf.PDFHints;
 import org.jfree.pdf.Page;
 
+import com.mhschmieder.graphicstoolkit.GraphicsUtilities;
 import com.mhschmieder.graphicstoolkit.color.ColorMode;
-import com.mhschmieder.graphicstoolkit.graphics.GraphicsUtilities;
 import com.mhschmieder.graphicstoolkit.print.PaperConstants;
 import com.mhschmieder.guitoolkit.component.VectorSource;
 

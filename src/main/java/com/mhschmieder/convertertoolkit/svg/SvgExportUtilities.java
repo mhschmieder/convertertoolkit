@@ -39,8 +39,8 @@ import java.io.Writer;
 import org.jfree.svg.SVGGraphics2D;
 import org.jfree.svg.SVGHints;
 
+import com.mhschmieder.graphicstoolkit.GraphicsUtilities;
 import com.mhschmieder.graphicstoolkit.color.ColorMode;
-import com.mhschmieder.graphicstoolkit.graphics.GraphicsUtilities;
 import com.mhschmieder.graphicstoolkit.print.PaperConstants;
 import com.mhschmieder.guitoolkit.component.VectorSource;
 
