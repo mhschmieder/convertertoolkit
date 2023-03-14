@@ -36,6 +36,7 @@ import java.io.FileOutputStream;
 import java.io.OutputStreamWriter;
 import java.io.Writer;
 
+import org.apache.commons.math3.util.FastMath;
 import org.jfree.graphics2d.svg.SVGGraphics2D;
 import org.jfree.graphics2d.svg.SVGHints;
 
@@ -221,8 +222,8 @@ public final class SvgExportUtilities {
         // As JFreeSVG only supports integer precision bounds, we round up for
         // the canvas size, so that nothing gets clipped during higher-precision
         // floating-point transforms of the graphics transcoding.
-        final SVGGraphics2D svgGraphics = new SVGGraphics2D( ( int ) Math.ceil( pageWidth ),
-                                                             ( int ) Math.ceil( pageHeight ) );
+        final SVGGraphics2D svgGraphics = new SVGGraphics2D( ( int ) FastMath.ceil( pageWidth ),
+                                                             ( int ) FastMath.ceil( pageHeight ) );
 
         // Vectorize the text, to avoid missing fonts and to allow more
         // flexibility in how to work with text in downstream applications.
