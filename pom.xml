@@ -8,7 +8,7 @@
     <version>0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>ConverterToolkit</name>
+    <name>convertertoolkit</name>
     <url>https://github.com/mhschmieder/convertertoolkit</url>
     <description>A toolkit for converting Java AWT based graphics to various vector graphics output formats such as EPS, SVG and PDF.</description>  
 
